@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            width: 96vw;
+            background-color: rgb(240, 248, 245);
+            /* padding: 20px; */
+        }
+        .items{
+            display: flex;
+            padding: 8px;
+            justify-content: end;
+        }
+        input{
+            flex-grow: 1 ;
+            
+        }
+        label{
+            width: 20%;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="items">
+            <label>Name</label>
+            <input type="text">
+        </div>
+        <div class="items">
+            <label>Town your born in</label>
+            <input type="text">
+        </div>
+        <div class="items">
+            <label>Email</label>
+            <input type="email">
+        </div>
+        <div class="items">
+            <button>Submit</button>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: grid;
+            width: 99vw;
+            height: 99vh;
+            grid-gap: 5px;
+            grid-template-columns: 25% 25% 25% 25%;
+            grid-template-rows: 20% 40% 20%;
+         
+        }
+
+        .item {
+            background-color: gold;
+            color: black;
+            font-size: 20px;
+            padding: 50px;
+            border-radius: 5px;
+        }
+        #header{
+            grid-row: 1;
+            grid-column: 1/span 4;
+        }
+        #nav{
+           grid-area: 2/2/3/4;
+           grid-row: 2/span 3;
+           grid-column: 3;
+        
+        
+    
+        }
+        #article{
+            
+           grid-row: 2/span 3;
+           grid-column: 1/span 2;
+
+        }
+        #ads{
+            grid-column: 4;
+            grid-row: 2/span 3;
+        }
+        #footer{
+           grid-row: 5;
+           grid-column: 1/span 4;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item" id="header">header</div>
+        <div class="item" id="nav">Nav</div>
+        <div class="item" id="article">Article</div>
+        <div class="item" id="ads">Ads</div>
+        <div class="item" id="footer">footer</div>
+    </div>
+    </div>
+</body>
+
+</html>
